@@ -1,0 +1,8 @@
+Policy,IEEE-CIS LightGBM,IEEE-CIS FT-Transformer,ULB LightGBM,ULB FT-Transformer,BankSim LightGBM,BankSim FT-Transformer
+"Binary, F1 threshold (P1)",354.5,381.9,2.61,2.57,24.2,41.5
+"Binary, Bayes rule (P2)",276.2,306.9,2.97,2.83,20.2,32.3
+Top-K review (P3),353.2,369.6,3.37,3.37,223.8,146.3
+Reject option (P4),307.5,324.5,3.37,3.37,15.5,28.7
+"Three-way, fixed (P5)",314.8,352.4,3.42,3.57,16.7,32.5
+"Three-way, expected loss (P6)",218.6,248.3,3.42,3.57,15.0,28.5
+Budgeted Bayes (P7),215.5,240.7,2.61,2.64,12.8,23.9

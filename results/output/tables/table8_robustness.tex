@@ -1,0 +1,44 @@
+\begin{table}[t]
+\centering
+\caption{Revision analyses at the middle budget (isotonic calibration). Value: median cost reduction (\%) of P7 relative to the cheapest competitor across scorers (or resamples), unless stated otherwise; decomposition in cost units.}
+\label{tab:robust}
+\begin{tabular}{llrl}
+\toprule
+Analysis & Dataset & Value & Detail \\
+\midrule
+Tuned thresholds (P1-c, P5/P6 tuned): P7 vs best & IEEE-CIS & 1.0 & P7 lowest in 15/20 cells \\
+Decomposition of P6 - P7 (block / review), LightGBM & IEEE-CIS & -5,547 / 8,666 & gap 3,120 \\
+Cost model: amount dependent Cblk & IEEE-CIS & 1.4 & P7 lowest for 4/4 scorers \\
+Cost model: amount dependent q & IEEE-CIS & 6.2 & P7 lowest for 4/4 scorers \\
+Cost model: recovery 0.5 & IEEE-CIS & -0.6 & P7 lowest for 1/4 scorers \\
+Cost model: recovery 0.75 & IEEE-CIS & 1.2 & P7 lowest for 3/4 scorers \\
+Prevalence x0.5, offline & IEEE-CIS & -11.4 & P7 lowest in 0\% of resamples \\
+Prevalence x0.5, online capped & IEEE-CIS & -8.3 & P7 lowest in 0\% of resamples \\
+Prevalence x2, offline & IEEE-CIS & 14.4 & P7 lowest in 100\% of resamples \\
+Prevalence x2, online capped & IEEE-CIS & 29.3 & P7 lowest in 100\% of resamples \\
+Tuned thresholds (P1-c, P5/P6 tuned): P7 vs best & ULB & -2.5 & P7 lowest in 4/24 cells \\
+Decomposition of P6 - P7 (block / review), LightGBM & ULB & 24 / 790 & gap 814 \\
+Cost model: amount dependent Cblk & ULB & -1.5 & P7 lowest for 2/4 scorers \\
+Cost model: amount dependent q & ULB & 0.4 & P7 lowest for 2/4 scorers \\
+Cost model: recovery 0.5 & ULB & 2.9 & P7 lowest for 3/4 scorers \\
+Cost model: recovery 0.75 & ULB & 2.5 & P7 lowest for 3/4 scorers \\
+Prevalence x0.5, offline & ULB & -1.2 & P7 lowest in 47\% of resamples \\
+Prevalence x0.5, online capped & ULB & 20.9 & P7 lowest in 100\% of resamples \\
+Prevalence x2, offline & ULB & -0.3 & P7 lowest in 48\% of resamples \\
+Prevalence x2, online capped & ULB & 6.8 & P7 lowest in 97\% of resamples \\
+Tuned thresholds (P1-c, P5/P6 tuned): P7 vs best & BankSim & 3.0 & P7 lowest in 21/24 cells \\
+Decomposition of P6 - P7 (block / review), LightGBM & BankSim & -3,334 / 5,540 & gap 2,206 \\
+Cost model: amount dependent Cblk & BankSim & -0.8 & P7 lowest for 2/4 scorers \\
+Cost model: amount dependent q & BankSim & 14.8 & P7 lowest for 4/4 scorers \\
+Cost model: recovery 0.5 & BankSim & 5.7 & P7 lowest for 4/4 scorers \\
+Cost model: recovery 0.75 & BankSim & 8.6 & P7 lowest for 4/4 scorers \\
+Prevalence x0.5, offline & BankSim & -9.8 & P7 lowest in 0\% of resamples \\
+Prevalence x0.5, online capped & BankSim & -1.1 & P7 lowest in 44\% of resamples \\
+Prevalence x2, offline & BankSim & 15.9 & P7 lowest in 100\% of resamples \\
+Prevalence x2, online capped & BankSim & 24.7 & P7 lowest in 100\% of resamples \\
+Window W1 (LightGBM): P7 vs P1 / P2 / P6 & IEEE-CIS & 39.1 / 20.5 / 4.6 &  \\
+Window W2 (LightGBM): P7 vs P1 / P2 / P6 & IEEE-CIS & 39.1 / 20.6 / 3.7 &  \\
+Window W3 (LightGBM): P7 vs P1 / P2 / P6 & IEEE-CIS & 39.2 / 22.0 / 1.4 &  \\
+\bottomrule
+\end{tabular}
+\end{table}

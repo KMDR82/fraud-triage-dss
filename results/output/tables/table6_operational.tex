@@ -1,0 +1,26 @@
+\begin{table}[t]
+\centering
+\caption{Budget enforcement in operation (LightGBM, middle budget): total cost with hindsight selection, with the window budget enforced on arrival, and with a per-period capacity; review volume relative to $K$ without the cap; share of per-period capacity used by the adaptive threshold.}
+\label{tab:operational}
+\begin{tabular}{llrrrrrrr}
+\toprule
+Dataset & Policy & Offline & Online capped & Change (\%) & Reviews/K, uncapped & Per-period static & Per-period adaptive & Capacity use, adaptive \\
+\midrule
+IEEE-CIS & P3 & 353,247 & 375,884 & 6.4 & 1.39 & 369,136 & 361,587 & 0.83 \\
+ & P4 & 307,536 & 319,640 & 3.9 & 1.58 & 310,731 & 309,047 & 0.93 \\
+ & P5 & 314,850 & 350,253 & 11.2 & 1.38 & 343,910 & 326,378 & 0.87 \\
+ & P6 & 218,578 & 253,986 & 16.2 & 1.18 & 250,072 & 233,599 & 0.91 \\
+ & P7 & 215,459 & 222,393 & 3.2 & 1.19 & 222,134 & 221,334 & 0.93 \\
+ULB & P3 & 3,372 & 7,110 & 110.8 & 23.53 & 7,110 & 4,913 & 0.62 \\
+ & P4 & 3,372 & 3,607 & 7.0 & 23.53 & 3,627 & 3,192 & 0.75 \\
+ & P5 & 3,422 & 4,225 & 23.4 & 23.22 & 4,166 & 4,166 & 1.00 \\
+ & P6 & 3,424 & 2,949 & -13.9 & 0.52 & 3,084 & 3,154 & 0.72 \\
+ & P7 & 2,610 & 2,610 & 0.0 & 0.17 & 2,610 & 2,640 & 0.12 \\
+BankSim & P3 & 223,761 & 212,754 & -4.9 & 1.12 & 230,475 & 248,759 & 0.89 \\
+ & P4 & 15,534 & 16,126 & 3.8 & 1.08 & 16,461 & 16,128 & 0.87 \\
+ & P5 & 16,727 & 20,171 & 20.6 & 1.06 & 28,772 & 25,630 & 0.88 \\
+ & P6 & 15,033 & 15,248 & 1.4 & 0.99 & 26,672 & 29,634 & 0.81 \\
+ & P7 & 12,827 & 13,063 & 1.8 & 1.11 & 13,656 & 14,022 & 0.87 \\
+\bottomrule
+\end{tabular}
+\end{table}

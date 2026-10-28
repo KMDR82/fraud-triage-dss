@@ -1,0 +1,13 @@
+Dataset,Scorer,Calibrator,n+=25,n+=50,n+=100,n+=200,n+=400,n+=800,n+=1600,n+=3042,n+=970,n+=14,n+=28,n+=56
+IEEE-CIS,LightGBM,isotonic,36.2,37.5,38.0,38.9,39.4,39.4,39.1,39.2,--,--,--,--
+IEEE-CIS,LightGBM,platt,41.3,41.7,40.8,40.9,40.7,40.6,40.3,40.2,--,--,--,--
+IEEE-CIS,FT-Transformer,isotonic,36.5,35.4,36.9,37.4,37.3,37.5,37.4,37.0,--,--,--,--
+IEEE-CIS,FT-Transformer,platt,39.1,38.1,37.7,38.0,37.6,37.7,37.5,36.9,--,--,--,--
+BankSim,LightGBM,isotonic,42.3,43.1,43.2,42.5,42.1,--,--,--,47.0,--,--,--
+BankSim,LightGBM,platt,48.0,46.4,45.5,44.3,43.6,--,--,--,46.0,--,--,--
+BankSim,FT-Transformer,isotonic,38.1,41.9,39.7,41.6,41.8,--,--,--,42.5,--,--,--
+BankSim,FT-Transformer,platt,42.7,43.7,41.6,42.9,43.0,--,--,--,44.0,--,--,--
+ULB,LightGBM,isotonic,--,--,--,--,--,--,--,--,--,8.8,8.8,-0.1
+ULB,LightGBM,platt,--,--,--,--,--,--,--,--,--,11.5,10.3,1.4
+ULB,FT-Transformer,isotonic,--,--,--,--,--,--,--,--,--,-0.9,-2.5,-2.5
+ULB,FT-Transformer,platt,--,--,--,--,--,--,--,--,--,-2.5,-2.1,-2.1

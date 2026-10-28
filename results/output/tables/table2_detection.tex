@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Detection performance on the test partitions.}
+\label{tab:detection}
+\begin{tabular}{lrrrrrr}
+\toprule
+Model & IEEE-CIS AUPRC & IEEE-CIS AUROC & ULB AUPRC & ULB AUROC & BankSim AUPRC & BankSim AUROC \\
+\midrule
+Logistic regression & 0.315 & 0.843 & 0.707 & 0.977 & 0.780 & 0.993 \\
+MLP & 0.377 & 0.792 & 0.754 & 0.960 & 0.831 & 0.995 \\
+Random forest & 0.488 & 0.876 & 0.768 & 0.930 & 0.901 & 0.994 \\
+XGBoost & 0.511 & 0.881 & 0.772 & 0.980 & 0.923 & 0.999 \\
+LightGBM & 0.526 & 0.895 & 0.701 & 0.880 & 0.919 & 0.999 \\
+CatBoost & 0.515 & 0.894 & 0.757 & 0.985 & 0.915 & 0.998 \\
+FT-Transformer (ensemble) & 0.463 & 0.876 & 0.731 & 0.977 & 0.842 & 0.995 \\
+FT-Transformer (single seed, mean $\pm$ sd) & 0.439 $\pm$ 0.008 & -- & 0.708 $\pm$ 0.050 & -- & 0.839 $\pm$ 0.001 & -- \\
+\bottomrule
+\end{tabular}
+\end{table}

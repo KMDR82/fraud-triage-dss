@@ -1,0 +1,17 @@
+\begin{table}[t]
+\centering
+\caption{Paired bootstrap of the budgeted Bayes policy (P7) against each competitor: number of cells (scorer $\times$ budget) in which P7 is significantly cheaper / not significantly different / significantly more expensive (95\% interval, 1,000 resamples). Offline: hindsight selection; online: window budget enforced on arrival with a hard cap; per-period: per-period capacity with the adaptive threshold.}
+\label{tab:boot}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Competitor & IEEE-CIS offline & IEEE-CIS online & IEEE-CIS per-period & ULB offline & ULB online & ULB per-period & BankSim offline & BankSim online & BankSim per-period \\
+\midrule
+Binary, F1 threshold (P1) & 20/0/0 & -- & -- & 0/24/0 & -- & -- & 24/0/0 & -- & -- \\
+Binary, Bayes rule (P2) & 20/0/0 & -- & -- & 9/15/0 & -- & -- & 24/0/0 & -- & -- \\
+Top-K review (P3) & 20/0/0 & 20/0/0 & 20/0/0 & 22/2/0 & 23/1/0 & 24/0/0 & 24/0/0 & 24/0/0 & 24/0/0 \\
+Reject option (P4) & 20/0/0 & 20/0/0 & 20/0/0 & 13/11/0 & 17/7/0 & 12/12/0 & 20/4/0 & 24/0/0 & 19/5/0 \\
+Three-way, fixed (P5) & 20/0/0 & 20/0/0 & 20/0/0 & 14/9/1 & 16/7/1 & 14/8/2 & 23/1/0 & 24/0/0 & 24/0/0 \\
+Three-way, expected loss (P6) & 10/9/1 & 20/0/0 & 19/1/0 & 15/9/0 & 12/11/1 & 13/10/1 & 21/3/0 & 21/3/0 & 24/0/0 \\
+\bottomrule
+\end{tabular}
+\end{table}
