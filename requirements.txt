@@ -1,0 +1,11 @@
+# Packages used by the notebook and the tools. The reported run used the Kaggle Python GPU image
+# (October 2026); TensorFlow 2.20 was used for the FT-Transformer.
+numpy
+pandas
+scipy
+scikit-learn
+xgboost
+lightgbm
+catboost
+tensorflow==2.20.*
+matplotlib

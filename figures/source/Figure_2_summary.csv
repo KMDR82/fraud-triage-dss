@@ -1,0 +1,4 @@
+dataset,K,gain_threshold,review_p_max,fraud_blocked,fraud_reviewed,fraud_approved
+ieee,2000,21.805600992838535,0.3638879801432293,1222,269,1592
+ulb,100,0.0,0.8,17,3,32
+bs,400,8.292682926829269,0.6341463414634146,682,145,135
